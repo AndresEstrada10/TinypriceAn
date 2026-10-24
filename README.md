@@ -36,5 +36,7 @@ La función pública es didáctica; requiere autenticación y límites compartid
 - Proyecto `cruunmqluwtuqcfbfjqa` creado en la organización ADS y función `search-products` desplegada.
 - Endpoint verificado: consulta vacía devuelve HTTP 400; sin el secreto TinyFish devuelve HTTP 503 con `TINYFISH_NOT_CONFIGURED`.
 - Búsqueda real verificada el 24 de octubre de 2026: `Nintendo Switch OLED Ecuador` devuelve HTTP 200 y 8 resultados, con enlaces de fuentes reales.
-- Pendiente probar el recorrido Android en celular.
+- Verificación directa en Redmi Note 9 Pro (Android 12): consulta vacía, búsqueda real con 9 resultados, detalle, volver a la lista y apertura de la URL en Chrome correctos.
+- Corregido y verificado el espacio de la barra de estado en búsqueda y detalle.
+- La prueba instrumentada de Compose no completó en este dispositivo; se interrumpió y no se considera aprobada. Quedan pendientes rotación, modo claro y error sin red en dispositivo.
 - Compilación `assembleDebug` y 3 pruebas unitarias del ViewModel correctas (24 de octubre de 2026).
