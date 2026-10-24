@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
-val edgeRuntimeBaseUrl = providers.gradleProperty("edgeRuntimeBaseUrl")
+val edgeRuntimeBaseUrl = providers.gradleProperty("tinypriceEdgeRuntimeBaseUrl")
     .orElse("https://YOUR_PROJECT_REF.supabase.co/functions/v1")
     .get()
 val useRemoteDeals = providers.gradleProperty("useRemoteDeals").orNull == "true"
